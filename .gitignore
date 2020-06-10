@@ -1,0 +1,8 @@
+.idea
+*.iml
+tmp*
+node_modules
+package-lock.json
+
+*.db
+*.sqlite
