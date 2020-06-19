@@ -1,0 +1,4 @@
+--require test/helpers
+--reporter spec
+--slow 500
+--timeout 5000
