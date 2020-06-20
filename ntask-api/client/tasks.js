@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 axios.defaults.baseURL = 'http://127.0.0.1:3000';
-axios.defaults.headers.common['Authorization'] = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.Kk5syPXQQ0J9UkeRjf-Vwtujs5OMP7hf2tu8BKZRsLY';
+axios.defaults.headers.common['Authorization'] = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NDd9.AAU7_nm5fZN9L0iGvTibiRwxgDynut89cuQSv15e4cE';
 
 function getTasks() {
     axios.get('/tasks', {}).then(res => {
@@ -36,9 +36,9 @@ function updateTask() {
     });
 }
 
-// getTasks();
+getTasks();
 // crateTask();
 // getTask();
-updateTask();
+// updateTask();
 
 

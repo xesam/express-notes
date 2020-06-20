@@ -29,4 +29,5 @@ function delUser() {
         });
 }
 
+createUser();
 // getUser();

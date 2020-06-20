@@ -14,4 +14,4 @@ function getToken() {
     });
 }
 
-// getToken();
+getToken();

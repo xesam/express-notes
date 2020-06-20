@@ -5,15 +5,13 @@ module.exports = app => {
         .get((req, res) => {
             Tasks.findAll({
                 UserId: req.user.id
-            }).then(tasks => {
-                return res.json({
-                    tasks: tasks
+            })
+                .then(tasks => res.json(tasks))
+                .catch(err => {
+                    res.status(412).json({
+                        msg: err.message
+                    })
                 });
-            }).catch(err => {
-                res.status(412).json({
-                    msg: err.message
-                })
-            });
         })
         .post((req, res) => {
             req.body.UserId = req.user.id;

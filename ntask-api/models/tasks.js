@@ -22,7 +22,7 @@ module.exports = (sequelize, DataType) => {
         }
     );
     Tasks.associate = models => {
-        Tasks.belongsTo(models.Users);
+        Tasks.belongsTo(models.Users, {foreignKey: 'user_id'});
     };
     return Tasks;
 };
